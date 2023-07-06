@@ -1,0 +1,3 @@
+[submodule "netsender"]
+	path = netsender
+	url = git@github.com:amylao82/netsender.git
