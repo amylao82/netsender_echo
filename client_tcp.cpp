@@ -72,7 +72,8 @@ int main(int argc, char* argv[])
     {
 	sprintf(buf, "send NO %d \n", count);  //回复client
 	cout << buf << endl;
-	pSender->send_buf(buf);
+//	pSender->send_buf(buf);
+	protocol->send_data(buf);
 	++count;
 	std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     }
