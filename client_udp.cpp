@@ -33,7 +33,7 @@ void sig_handler( int sig )
 class protocol_echo : public protocol_interface
 {
     public:
-	virtual void recv_data(const SOCKETINFO& socket, void* data, int len)
+	virtual void recv_data(void* data, int len, const SOCKETINFO& socket)
 	{
 	    printf("my protocol receive data len = %d, data = %s\n", len, data);
 	}
